@@ -20,3 +20,17 @@ html{
 .h2{
     text-align: center;
 }
+
+.ecritureCarre{
+    height: 30px;
+    width: 200px;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+.result{
+    height: 30px;
+    width: 200px;
+    border: 1px solid red;
+    border-radius: 3px;
+}

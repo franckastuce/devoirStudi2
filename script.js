@@ -15,3 +15,10 @@ function themeNuitJour() {
     }
 }
 themeNuitJour();
+
+let carre = prompt("écriver votre chiffre ou nombre");
+
+alert(carre * carre + " m²");
+
+let resultat = document.getElementById("result");
+console.log(result);

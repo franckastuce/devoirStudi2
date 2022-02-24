@@ -16,9 +16,10 @@ function themeNuitJour() {
 }
 themeNuitJour();
 
-let carre = prompt("écriver votre chiffre ou nombre");
+//*-----------------------------
 
-alert(carre * carre + " m²");
+//build square calculation
 
-let resultat = document.getElementById("result");
-console.log(result);
+document.getElementsByClassName('result').addEventListener("prompt", (e) => {
+    console.log(e.target.value + "m²");
+})

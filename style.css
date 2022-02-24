@@ -21,14 +21,14 @@ html{
     text-align: center;
 }
 
-.ecritureCarre{
+.inputE{
     height: 30px;
     width: 200px;
     border: 1px solid blue;
     border-radius: 3px;
 }
 
-.result{
+.inputR{
     height: 30px;
     width: 200px;
     border: 1px solid red;

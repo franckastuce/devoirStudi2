@@ -16,10 +16,22 @@ function themeNuitJour() {
 }
 themeNuitJour();
 
-//*-----------------------------
-
+//-----------------------------
+//carre
 //build square calculation
+const result = document.querySelector('mousEvent');
 
-document.getElementsByClassName('result').addEventListener("prompt", (e) => {
-    console.log(e.target.value + "m²");
+document.getElementById('input').addEventListener("input", (e) => {
+    result.innertHTML = `
+    <div id="resultR">
+    <span class="result"${result}>m²</span>
+    `;
 })
+
+//-----------------------------
+//triangle
+
+let base = prompt("chiffre de BC");
+let hauteut = prompt("chiffre de AH");
+
+alert(base * hauteur / 2);

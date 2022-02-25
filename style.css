@@ -21,14 +21,14 @@ html{
     text-align: center;
 }
 
-.inputE{
+.input{
     height: 30px;
     width: 200px;
     border: 1px solid blue;
     border-radius: 3px;
 }
 
-.inputR{
+.result{
     height: 30px;
     width: 200px;
     border: 1px solid red;

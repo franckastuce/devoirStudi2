@@ -1,8 +1,7 @@
 //build square calculation
 
-const result = document.querySelector('click');
-
-document.getElementById('input').addEventListener("input", (e) => {
-    console.log(e.target.value);
-})
-
+calculer.onclick = function carre() {
+    let a = prompt("rentrer le chiffre que vous avez");
+    let calcu = a * 4;
+    alert("le périmétre du carré est : " + calcu);
+}

@@ -6,7 +6,7 @@ function themeNuitJour() {
     const date = new Date()
     const hour = date.getHours()
     // entre 9 et 17h, day
-    if (hour > 9 || hour < 17) {
+    if (hour < 9 || hour > 17) {
         document.documentElement.style.setProperty('--ecriture', '#333')
         document.documentElement.style.setProperty('--fond', '#f1f1f1')
     } else {
@@ -15,3 +15,17 @@ function themeNuitJour() {
     }
 }
 themeNuitJour();
+
+//****************************
+
+/*
+let light = document.getElementById("light");
+let dark = document.getElementById("dark");
+
+light.onclick = function light() {
+    console.log("yes");
+}
+
+dark.onclick = function (e) {
+    console.log(e);
+}*/

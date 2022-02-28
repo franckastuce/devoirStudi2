@@ -1,7 +1,9 @@
+/*buid let day night*/
 :root{
     --ecriture: #333;
     --fond:#f1f1f1;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -9,9 +11,17 @@
 
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: var(--fond);
-    color: var(--ecriture);
+    background-color: var(--ecriture #f1f1f1);
+    color: var(--fond #333);
     text-align: justify;
+}
+.light{
+    background-color: var(--ecriture #f1f1f1);
+    color: var(--fond #333);
+}
+.dark{
+    background-color: var(--ecriture #333);
+    color: var(--fond #f1f1f1);
 }
 .lorem{
     padding: 10px;
@@ -22,19 +32,6 @@ html{
     text-align: center;
 }
 
-.input{
-    height: 30px;
-    width: 400px;
-    border: 1px solid blue;
-    border-radius: 3px;
-}
-
-.result{
-    height: 30px;
-    width: 200px;
-    border: 1px solid red;
-    border-radius: 3px;
-}
 .sourie{
     height: 500px;
     max-height: 100%;
@@ -50,3 +47,5 @@ html{
     transform: translateX(-50%);
     padding: 10px;
 }
+
+

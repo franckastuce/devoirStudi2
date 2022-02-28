@@ -1,28 +1,21 @@
 //build square calculation
-let calculer = document.getElementById("calculer");
+//reccuperation du chiffre ou nombre dans la divavec eventclick
+//calcule du cercle avec la formule
+//cercle =2*r*3.14
+//affichage dans la div
 
-function event() {
-    alert("ca marche")
-}
-calculer.addEventListener("click", event)
+calculer.onclick = function chiffre() {
+
+    let chiffre = document.getElementById("input");
+    chiffre.addEventListener("input", () => {
+        console.log(chiffre.value);
+        let A = chiffre.value;
+        let calcu = ((A * 2) + 3.14);
+        console.log(chiffre.innerHTML);
+    }
 /*
-const result = document.querySelector('keydown');
+let result = document.getElementById("result");
 
-document.getElementById('input').addEventListener("input", (e) => {
-    console.log(e.target.value);
+result.addEventListener('clik', () => {
+    console.log(document.chiffre.innertHTML)
 })*/
-
-/*dans la fonction  recuperer le chiffre 
-calcule
-affichage dans result*/
-/*
-let figures = "";
-
-
-function calcul("input", (e) => {
-    figures = keyNoteenter
-}
-
-
-result.document.getElemntById("result.target.value")
-*/

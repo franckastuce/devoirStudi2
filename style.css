@@ -11,17 +11,12 @@
 
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: var(--ecriture #f1f1f1);
-    color: var(--fond #333);
     text-align: justify;
 }
-.light{
+/*day night color construction*/
+.body{
     background-color: var(--ecriture #f1f1f1);
     color: var(--fond #333);
-}
-.dark{
-    background-color: var(--ecriture #333);
-    color: var(--fond #f1f1f1);
 }
 .lorem{
     padding: 10px;
@@ -31,12 +26,20 @@ html{
 .h2{
     text-align: center;
 }
-
+/* container size construction*/
+.container{
+    width: 100%;
+    height: 500px;
+    margin: 10px;
+    padding: 10px;
+}
+/* game buid*/
 .sourie{
     height: 500px;
     max-height: 100%;
     width: 100%;
     border: 1px solid #333;
+    background: #fcf8f8;
 }
 .lieu{
     border: 6px solid rgb(175, 29, 163);

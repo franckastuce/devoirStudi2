@@ -18,14 +18,27 @@ themeNuitJour();
 
 //****************************
 
-/*
-let light = document.getElementById("light");
-let dark = document.getElementById("dark");
+//this is for buttons
 
-light.onclick = function light() {
-    console.log("yes");
+/*la ligne du dessous ne fonctionne pas, j'ai du me rabbatre sur les onclik dans le html si vous avez une solution, je serai interreser de comprendre.
+         document.querySelector("#light").addEventListener("mouseover", lumiere);*/
+
+function lumiere() {
+    //test if it works
+    console.log("mode jour");
+    //setting up the function
+    let light = document.querySelector("#mode");
+    light.style.color = "black";
+    light.style.background = "white";
+    dark.style.transition = "0.8s";
 }
 
-dark.onclick = function (e) {
-    console.log(e);
-}*/
+//same but dark
+function sombre() {
+    console.log("mode nuit");
+    let dark = document.querySelector("#mode");
+    dark.style.color = "blue";
+    dark.style.background = "black";
+    dark.style.collapse = "black";
+    dark.style.transition = "0.8s";
+}

@@ -51,4 +51,39 @@ html{
     padding: 10px;
 }
 
+/**********/
+/*buidl of the game ccs*/
+.contenaire{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 100%;
+    background: rgb(124, 123, 123) rgb(255,255,255);
+    border: 1px solid black;
+}
+.title{
+    height: 30px;
+    width: 100%;
+    color: black;
+    align-items: center;
+    vertical-align: center;
+}
+.bodyJeux{
+    flex-direction: row;
+    height: 500px;
+}
+.player1{
+    align-items: center;
+    vertical-align: center;
+    height: 400px;
+}
+.score{
+    height: 100px;
+}
+.red{
+    height: 200px;
+    width: 200px;
+    background: rgb(248, 65, 65);
+}
+
 

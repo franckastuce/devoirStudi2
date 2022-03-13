@@ -56,10 +56,15 @@ html{
 .contenaire{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    vertical-align: center;
     height: 90%;
     width: 100%;
     background: rgb(124, 123, 123) rgb(255,255,255);
     border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
 }
 .title{
     height: 30px;
@@ -69,13 +74,25 @@ html{
     vertical-align: center;
 }
 .bodyJeux{
+    display: flex;
+    justify-content: center;
     flex-direction: row;
     height: 500px;
 }
 .player1{
-    align-items: center;
-    vertical-align: center;
-    height: 400px;
+    height: 500px;
+    width: 550px;
+    border: 1px solid black;
+}
+.player2{
+    height: 500px;
+    width: 550px;
+    border: 1px solid black;
+}
+.center{
+    height: 500px;
+    width: 230px;
+    border: 1px solid black;
 }
 .score{
     height: 100px;
@@ -84,6 +101,7 @@ html{
     height: 200px;
     width: 200px;
     background: rgb(248, 65, 65);
+    border-radius: 3px;
 }
 
 

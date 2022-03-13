@@ -15,6 +15,7 @@ function themeNuitJour() {
     }
 }
 themeNuitJour();
+//le code ci dessus ne fonctionne pas, je ne sais pas pourquoi
 
 //****************************
 
@@ -23,6 +24,7 @@ themeNuitJour();
 /*la ligne du dessous ne fonctionne pas, j'ai du me rabbatre sur les onclik dans le html si vous avez une solution, je serai interreser de comprendre.
          document.querySelector("#light").addEventListener("mouseover", lumiere);*/
 
+/*   ça c'est le code sans jquery qui fonctionne
 function lumiere() {
     //test if it works
     console.log("mode jour");
@@ -41,4 +43,17 @@ function sombre() {
     dark.style.background = "black";
     dark.style.collapse = "black";
     dark.style.transition = "0.8s";
-}
+}*/
+
+// added day and night functions with jquery
+$(function ready() {
+    console.log("ok jquery");
+    $("#ligth").on("click", function () {
+        console.log("tu click sur blanc");
+        $("body").css("color", "black").css("background", "white");
+    });
+    $("#dark").on("click", function () {
+        console.log("tu click sur noir");
+        $("body").css("color", "blue").css("background", "black");
+    });
+});

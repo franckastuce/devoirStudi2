@@ -103,5 +103,12 @@ html{
     background: rgb(248, 65, 65);
     border-radius: 3px;
 }
+.de{
+    height: 20px;
+    width: 20px;
+    background: orange;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
 

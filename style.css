@@ -149,3 +149,6 @@ html{ /*malgrer le lien dans tous les html, le lato ne veux pas ce mettre en pla
 .ct{
     color: #ffffff;
 }
+.gros{
+    font-size: 4rem;
+}

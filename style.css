@@ -10,7 +10,7 @@
 }
 
 html{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', sans-serif;
     text-align: justify;
 }
 /*day night color construction*/
@@ -25,10 +25,6 @@ html{
 }
 .h2{
     text-align: center;
-}
-/*fond du devoir demande en lato*/
-.devoir{
-    font-family: ;
 }
 
 /* container size construction*/

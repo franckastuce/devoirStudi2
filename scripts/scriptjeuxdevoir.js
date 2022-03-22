@@ -12,7 +12,7 @@ let global2 = document.getElementById("scoreCurent2");
 
 //function new game
 N.addEventListener("click", () => {
-    alert("Une nouvelle partie va commencer, appuyer sur: 'OK'")
+    alert("Une nouvelle partie va commencer, appuyer sur: 'OK'");
     round1.innerHTML = "0";
     round2.innerHTML = "0";
     de.innerHTML = "0";
@@ -38,6 +38,11 @@ reset.addEventListener("click", () => {
     global.innerHTML = Number(round1.innerHTML) + Number(global.innerHTML);
     if (Number(global.innerHTML) >= 100) {
         alert(`GENIAL JOUEUR 1, tu as gagné la partie avec ${global.innerHTML} points, c'est fini`);
+        round1.innerHTML = "0";
+        round2.innerHTML = "0";
+        de.innerHTML = "0";
+        global.innerHTML = "0";
+        global2.innerHTML = "0";
     }
     round1.innerHTML = 0;
 
@@ -63,6 +68,11 @@ reset2.addEventListener("click", () => {
     global2.innerHTML = Number(round2.innerHTML) + Number(global2.innerHTML);
     if (Number(global2.innerHTML) >= 100) {
         alert(`GENIAL JOUEUR 2, tu as gagné la partie avec ${global2.innerHTML} points, c'est fini`);
+        round1.innerHTML = "0";
+        round2.innerHTML = "0";
+        de.innerHTML = "0";
+        global.innerHTML = "0";
+        global2.innerHTML = "0";
     }
     round2.innerHTML = 0;
 });

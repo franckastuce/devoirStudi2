@@ -97,7 +97,6 @@ html{ /*malgrer le lien dans tous les html, le lato ne veux pas ce mettre en pla
     justify-content: center;
     height: 500px;
     width: 550px;
-    
     padding: 50px;
     font-size: 2rem;
 }
@@ -146,4 +145,7 @@ html{ /*malgrer le lien dans tous les html, le lato ne veux pas ce mettre en pla
 }
 .success{
     background: #198754;
+}
+.ct{
+    color: #ffffff;
 }

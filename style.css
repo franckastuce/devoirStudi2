@@ -26,6 +26,11 @@ html{
 .h2{
     text-align: center;
 }
+/*fond du devoir demande en lato*/
+.devoir{
+    font-family: ;
+}
+
 /* container size construction*/
 .container{
     width: 100%;

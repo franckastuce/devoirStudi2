@@ -9,8 +9,8 @@
     padding: 0;
 }
 
-html{
-    font-family: 'Lucida Sans', sans-serif;
+html{ /*malgrer le lien dans tous les html, le lato ne veux pas ce mettre en place???*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: justify;
 }
 /*day night color construction*/

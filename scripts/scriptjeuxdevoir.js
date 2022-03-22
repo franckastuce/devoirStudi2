@@ -1,4 +1,5 @@
 //random number for player 1
+const N = document.getElementById("new");
 let round1 = document.getElementById("round1");//pour le joueur 1
 let round2 = document.getElementById("round2");//pour le joueur 2
 let de = document.getElementById("de");
@@ -8,6 +9,15 @@ const reset = document.getElementById("reset");
 const reset2 = document.getElementById("reset2");
 let global = document.getElementById("scoreCurent1");
 let global2 = document.getElementById("scoreCurent2");
+
+N.addEventListener("click", () => {
+    alert("Une nouvelle partie va commencer, appuyer sur: 'OK'")
+    round1.innerHTML = "0";
+    round2.innerHTML = "0";
+    de.innerHTML = "0";
+    global.innerHTML = "0";
+    global2.innerHTML = "0";
+})
 
 boutton.addEventListener("click", () => {
     //console.log("yes");

@@ -1,7 +1,7 @@
 //build day Night
 function themeNuitJour() {
     //test funtion
-    console.log('hello');
+    //console.log('hello');
 
     const date = new Date()
     const hour = date.getHours()

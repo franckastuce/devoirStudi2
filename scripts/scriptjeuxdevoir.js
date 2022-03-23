@@ -10,6 +10,11 @@ const reset2 = document.getElementById("reset2");
 let global = document.getElementById("scoreCurent1");
 let global2 = document.getElementById("scoreCurent2");
 const btnP1 = document.querySelector("p1");
+const btnP2 = document.querySelector("p2");
+
+//test toggle
+//let isVisible = true;
+//let a = document.querySelector("btn-group-vertical p1");
 
 //function new game
 N.addEventListener("click", () => {
@@ -20,14 +25,13 @@ N.addEventListener("click", () => {
     global.innerHTML = "0";
     global2.innerHTML = "0";
 })
-
+console.log(typeof a);
 //listening button p1 to throw
 boutton.addEventListener("click", () => {
     //console.log("yes");
     de.innerHTML = parseInt(Math.floor(Math.random() * 10));
     //console.log(Number(de.innerHTML));
     round1.innerHTML = Number(de.innerHTML) + Number(round1.innerHTML);
-    btnP1.classList.toggle("invisibilyti");
     if (de.innerHTML === "1") {
         alert("AH AH, tu as fait '1', ton compteur reviens a ZERO, passe ton tour");
         return round1.innerHTML = "0";
@@ -46,6 +50,10 @@ reset.addEventListener("click", () => {
         global.innerHTML = "0";
         global2.innerHTML = "0";
     }
+    //test toggle
+    //isVisible = !isVisible;
+    //btnP2.classList.toggle("is-visible");
+
     round1.innerHTML = 0;
 
     //mettre la methode toggle et voir a changer les resultats.
@@ -55,7 +63,7 @@ reset.addEventListener("click", () => {
 boutton2.addEventListener("click", () => {
     //console.log("yes");
     de.innerHTML = parseInt(Math.floor(Math.random() * 10));
-    console.log(Number(de.innerHTML));
+    //console.log(Number(de.innerHTML));
     round2.innerHTML = Number(de.innerHTML) + Number(round2.innerHTML);
     if (de.innerHTML === "1") {
         alert("AH AH, tu as fait '1', ton compteur reviens a ZERO, passe ton tour");
@@ -76,5 +84,10 @@ reset2.addEventListener("click", () => {
         global.innerHTML = "0";
         global2.innerHTML = "0";
     }
+
+    //test toggle
+    //isVisible = !isVisible;
+    //btnP1.classList.toggle("is-visible");
+
     round2.innerHTML = 0;
 });

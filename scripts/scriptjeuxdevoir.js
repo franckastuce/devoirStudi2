@@ -9,6 +9,7 @@ const reset = document.getElementById("reset");
 const reset2 = document.getElementById("reset2");
 let global = document.getElementById("scoreCurent1");
 let global2 = document.getElementById("scoreCurent2");
+const btnP1 = document.querySelector("p1");
 
 //function new game
 N.addEventListener("click", () => {
@@ -26,6 +27,7 @@ boutton.addEventListener("click", () => {
     de.innerHTML = parseInt(Math.floor(Math.random() * 10));
     //console.log(Number(de.innerHTML));
     round1.innerHTML = Number(de.innerHTML) + Number(round1.innerHTML);
+    btnP1.classList.toggle("invisibilyti");
     if (de.innerHTML === "1") {
         alert("AH AH, tu as fait '1', ton compteur reviens a ZERO, passe ton tour");
         return round1.innerHTML = "0";

@@ -25,7 +25,7 @@ N.addEventListener("click", () => {
     global.innerHTML = "0";
     global2.innerHTML = "0";
 })
-console.log(typeof a);
+//console.log(typeof a);
 //listening button p1 to throw
 boutton.addEventListener("click", () => {
     //console.log("yes");
@@ -91,3 +91,41 @@ reset2.addEventListener("click", () => {
 
     round2.innerHTML = 0;
 });
+
+//integration des images
+let img = de.innerHTML;
+//console.log(typeof img);
+switch (img) {
+    case "0":
+        de.innerHTML = "./images/dés / zero.jpg";
+        break;
+    case "1":
+        de.innerHTML = ("url(./images/dés / 1.jpg");
+        break;
+    case "2":
+        de.innerHTML = ("url(./images/dés / 2.jpg");
+        break;
+    case "3":
+        de.innerHTML = ("url(./images/dés / 3.jpg");
+        break;
+    case "4":
+        de.innerHTML = ("url(./images/dés / 4.jpg");
+        break;
+    case "5":
+        de.innerHTML = ("url(./images/dés / 5.jpg");
+        break;
+    case "6":
+        de.innerHTML = ("url(./images/dés / 6.jpg");
+        break;
+    case "7":
+        de.innerHTML = ("url(./images/dés / 7.jpg");
+        break;
+    case "8":
+        de.innerHTML = ("url(./images/dés / 8.jpg");
+        break;
+    case "9":
+        de.innerHTML = ("url(./images/dés / 9.jpg");
+        break;
+    default:
+        console.log("pas de chiffre, c'est que le logiciel bug ")
+}

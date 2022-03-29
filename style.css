@@ -117,8 +117,8 @@ html{ /*malgrer le lien dans tous les html, le lato ne veux pas ce mettre en pla
     justify-content:top;
     flex-direction: top;
     margin: 10px;
-    height: 50px;
-    width: 50px;
+    height: 80px;
+    width: 80px;
     border: 1px solid #0f0c1100;
     border-radius: 3px;
     cursor: pointer;

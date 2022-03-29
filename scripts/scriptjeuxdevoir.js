@@ -15,7 +15,6 @@ const btnP2 = document.querySelector("p2");
 //test toggle
 //let isVisible = true;
 //let a = document.querySelector("btn-group-vertical p1");
-
 //function new game
 N.addEventListener("click", () => {
     alert("Une nouvelle partie va commencer, appuyer sur: 'OK'");
@@ -36,7 +35,34 @@ boutton.addEventListener("click", () => {
         alert("AH AH, tu as fait '1', ton compteur reviens a ZERO, passe ton tour");
         return round1.innerHTML = "0";
     }
+    //img.forEach(item => console.log(item.inline));
+    //integration des images avec if else, qui ne fonctionne pas
+    /*else if (de.innerHTML === "2") {
+        console.log(img[2]);//retourn image du tableau 
+    } else if (de.innerHTML === "3") {
+        return de.innerHTML = "url= ./images/dés / 3.jpg";
+    } else if (de.innerHTML === "4") {
+        return de.innerHTML = "url= ./images/dés / 4.jpg";
+    } else if (de.innerHTML === "5") {
+        return de.innerHTML = "url= ./images/dés / 5.jpg";
+    } else if (de.innerHTML === "6") {
+        return de.innerHTML = "url= ./images/dés / 6.jpg";
+    } else if (de.innerHTML === "7") {
+        return de.innerHTML = "url= ./images/dés / 7.jpg";
+    } else if (de.innerHTML === "8") {
+        return de.innerHTML = "url= ./images/dés / 8.jpg";
+    } else if (de.innerHTML === "9") {
+        return de.innerHTML = "url= ./images/dés / 9.jpg";
+    } else {
+        de.innerHTML === "0"
+        return de.innerHTML = "url= ./images/dés / zero.jpg";
+    }*/
 });
+boutton.addEventListener("click", () => {
+    if (de.innerHTML === "0") {
+        de.src = "../images/dés/zero.JPG";
+    }
+})
 
 //listening button p1 save
 reset.addEventListener("click", () => {
@@ -46,7 +72,7 @@ reset.addEventListener("click", () => {
         alert(`GENIAL JOUEUR 1, tu as gagné la partie avec ${global.innerHTML} points, c'est fini`);
         round1.innerHTML = "0";
         round2.innerHTML = "0";
-        de.innerHTML = "0";
+        de.innerHTML = "./images/dés / zero.jpg";
         global.innerHTML = "0";
         global2.innerHTML = "0";
     }
@@ -91,16 +117,28 @@ reset2.addEventListener("click", () => {
 
     round2.innerHTML = 0;
 });
-
+///après reflection je l'intergre directement au boutton avec if else.
 //integration des images
-let img = de.innerHTML;
+let img = [
+    { id: 0, value: './images/dés / zero.jpg', inline: "true" },
+    { id: 1, value: './images/dés/1.JPG', inline: true },
+    { id: 2, value: './images/dés/2.JPG', inline: true },
+    { id: 3, value: './images/dés / 3.jpg', inline: true },
+    { id: 4, value: './images/dés / 4.jpg', inline: true },
+    { id: 5, value: './images/dés / 5.jpg', inline: true },
+    { id: 6, value: './images/dés / 6.jpg', inline: true },
+    { id: 7, value: './images/dés / 7.jpg', inline: true },
+    { id: 8, value: './images/dés / 8.jpg', inline: true },
+    { id: 9, value: './images/dés / 9.jpg', inline: true },
+];
+/*let ima = de.innerHTML;
 //console.log(typeof img);
-switch (img) {
+switch (ima) {
     case "0":
         de.innerHTML = "./images/dés / zero.jpg";
         break;
     case "1":
-        de.innerHTML = ("url(./images/dés / 1.jpg");
+        de.innerHTML = "url(./images/dés / 1.jpg";
         break;
     case "2":
         de.innerHTML = ("url(./images/dés / 2.jpg");
@@ -128,4 +166,4 @@ switch (img) {
         break;
     default:
         console.log("pas de chiffre, c'est que le logiciel bug ")
-}
+}*/
